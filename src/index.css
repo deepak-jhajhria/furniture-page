@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headingLine{
+    @apply relative before:absolute before:h-[1px] before:bg-black before:w-[54px] sm:before:w-[95px] before:top-1/2 before:left-0 pl-16 sm:pl-[106px]
+  }
+}
