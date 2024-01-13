@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className='bg-[#243040]'>
-            <div className='container max-w-[1320px] pt-[87px]'>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 w-full gap-8 lg:gap-0">
+            <div className='container max-w-[1320px] pb-8 sm:pb-10 lg:pb-[68px] pt-10 sm:pt-12 lg:pt-20'>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 w-full gap-6 sm:gap-8 lg:gap-0">
                     <div className=' col-span-2 sm:col-span-3 lg:col-span-4'>
-                        <div className='flex flex-col gap-[23px]'>
+                        <div className='flex flex-col gap-3 sm:gap-5 md:gap-[23px]'>
                             <a className='flex items-center gap-[5px] sm:gap-2 uppercase font-Roboto font-bold text-white text-x xs:text-[22px] sm:text-2xl md:text-[30px] lg:text-[33px]' href="#"><Logo />FURNITURE</a>
                             <p className=' text-white font-Roboto font-normal leading-normal max-w-[338px] text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
                             <div className='flex gap-3'>
@@ -50,6 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <p className='text-white font-Roboto font-normal text-sm leading-normal pt-3 xs:pt-5 sm:pt-[26px] pb-3 xs:pb-5 sm:pb-[25px] text-center relative before:absolute before:w-full before:h-[1px] before:bg-[#9298A0] before:left-0 before:top-0'>@copyright{(new Date().getFullYear())}</p>
         </div>
     )
 }

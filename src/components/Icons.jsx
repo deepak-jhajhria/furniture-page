@@ -1,14 +1,12 @@
-import { useSwiper } from 'swiper/react'
-
 export const Logo = () => {
     return (
         <span><svg className="w-10 h-10 sm:w-[45px] sm:h-[45px] md:w-[55px] md:h-[55px] lg:w-[61px] lg:h-[61px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.08337 26.6875H15.25V44.4792H5.08337V26.6875Z" stroke="#BD7D41" stroke-width="4" stroke-linejoin="round" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.75 26.6875H55.9167V44.4792H45.75V26.6875Z" stroke="#BD7D41" stroke-width="4" stroke-linejoin="round" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 34.3125H45.75V44.4792H15.25V34.3125Z" stroke="#BD7D41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M10.1667 25.4165V10.1665H50.8334V25.4165" stroke="#BD7D41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M10.1667 45.75V50.8333" stroke="#BD7D41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M50.8334 45.75V50.8333" stroke="#BD7D41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M5.08337 26.6875H15.25V44.4792H5.08337V26.6875Z" stroke="#BD7D41" strokeWidth="4" strokeLinejoin="round" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M45.75 26.6875H55.9167V44.4792H45.75V26.6875Z" stroke="#BD7D41" strokeWidth="4" strokeLinejoin="round" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M15.25 34.3125H45.75V44.4792H15.25V34.3125Z" stroke="#BD7D41" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M10.1667 25.4165V10.1665H50.8334V25.4165" stroke="#BD7D41" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M10.1667 45.75V50.8333" stroke="#BD7D41" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M50.8334 45.75V50.8333" stroke="#BD7D41" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
         </svg></span>
     )
 }
