@@ -1,4 +1,5 @@
 import DealProduct from "../components/DealProduct"
+import Footer from "../components/Footer"
 import OurProducts from "../components/OurProducts"
 import TrendingProducts from "../components/TrendingProducts"
 import Welcome from "../components/Welcome"
@@ -12,6 +13,7 @@ const Home = () => {
             <OurProducts />
             <WoodenSofa />
             <DealProduct />
+            <Footer />
         </div>
     )
 }
