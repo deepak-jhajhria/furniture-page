@@ -1,3 +1,5 @@
+import { useSwiper } from 'swiper/react'
+
 export const Logo = () => {
     return (
         <span><svg className="w-10 h-10 sm:w-[45px] sm:h-[45px] md:w-[55px] md:h-[55px] lg:w-[61px] lg:h-[61px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" fill="none">

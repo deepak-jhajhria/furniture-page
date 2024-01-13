@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Cart, CrossIcon, Logo, SearchIcon } from './Icons'
 import { Link, useLocation } from 'react-router-dom'
 import { Sling as Hamburger } from 'hamburger-react'
-import CommonBtn from './CommonBtn'
 
 const NavBar = () => {
     const location = useLocation();
@@ -17,7 +16,7 @@ const NavBar = () => {
         }
     }, [search]);
     const openinput = (item) => {
-        setInput([...input, item]);
+        setInput([input, item]);
         setSearch(true);
     };
 
