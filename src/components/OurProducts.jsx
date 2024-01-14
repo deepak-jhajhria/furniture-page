@@ -36,7 +36,7 @@ const OurProducts = () => {
     ]
     return (
         <div className='relative'>
-            <div className='container max-w-[1320px] mt-[135px] pb-[69px] relative'>
+            <div className='container max-w-[1320px] mt-14 sm:mt-20 md:mt-[100px] lg:mt-[135px] pb-8 sm:pb-10 lg:pb-[69px] relative'>
                 <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Shopping Store</p>
                 <div className='flex w-full flex-col gap-4 sm:flex-row  sm:justify-between items-start sm:items-center mt-3'>
                     <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-5'>Our Products</h2>
@@ -52,7 +52,7 @@ const OurProducts = () => {
                                     <span>{items.review}</span>
                                 </div>
                                 <p className='text-[#4D4D4D] text-base sm:text-lg font-Poppins font-normal mt-4 leading-normal'>{items.productPara}</p>
-                                <div className='flex w-full items-center justify-between mt-4 pb-[35px]'>
+                                <div className='flex w-full items-center justify-between mt-4 pb-5 sm:pb-7 md:pb-[35px]'>
                                     <p className='text-black text-xl sm:text-2xl lg:text-[28px] font-Poppins font-semibold leading-normal'>{items.price}</p>
                                     <div onClick={() => addToCart('item')}>{items.cartBtn}</div>
                                 </div>
