@@ -43,12 +43,12 @@ const DealProduct = () => {
         </SwiperSlide>
     ))
     return (
-        <div className='w-full'>
-            <div className='container max-w-[1320px] pt-7 md:pt-0'>
+        <div className='w-full pt-[45px] pb-[60px]'>
+            <div className='container max-w-[1320px] pt-7 md:pt-0 '>
                 <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Shopping Store</p>
                 <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-6 leading-normal'>Latest Deal</h2>
             </div>
-            <div className='container max-w-[1556px] pb-10 sm:px-[60px] md:px-[70px] lg:px-[95px] xl:px-[120px] relative mt-5 sm:mt-9 md:mt-11 lg:mt-[66px]'>
+            <div className='container max-w-[1556px] sm:px-[60px] md:px-[70px] lg:px-[95px] xl:px-[120px] relative mt-5 sm:mt-9 md:mt-11 lg:mt-[66px]'>
                 <div>
                     <Swiper ref={sliderRef} modules={[Virtual]} loop={true} autoplay={{ delay: 500, disableOnInteraction: false }} slidesPerView={1} breakpoints={{ 992: { slidesPerView: 2, }, 1350: { slidesPerView: 3, }, }} spaceBetween={27} className="mySwiper">
                         {SwiperItems}
