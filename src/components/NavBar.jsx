@@ -1,48 +1,36 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Cart, CrossIcon, Logo, SearchIcon } from './Icons'
 import { Link, useLocation } from 'react-router-dom'
 import { Sling as Hamburger } from 'hamburger-react'
-
 const NavBar = () => {
-    const location = useLocation();
-    const [isOpen, setOpen] = useState(false)
-    const [search, setSearch] = useState(false)
-    const [input, setInput] = useState([]);
+    const location = useLocation(); const [isOpen, setOpen] = useState(false); const [search, setSearch] = useState(false); const [input, setInput] = useState([]);
     useEffect(() => {
-        if (search) {
-            document.body.classList.add('overflow-hidden');
-        } else {
-            document.body.classList.remove('overflow-hidden');
-        }
+        if (search) { document.body.classList.add('overflow-hidden'); }
+        else { document.body.classList.remove('overflow-hidden'); }
     }, [search]);
     const openinput = (item) => {
         setInput([input, item]);
         setSearch(true);
     };
-
     const closeModal = () => {
         setSearch(false);
     };
-    if (isOpen == true) {
-        document.body.classList.add("overflow-hidden")
-    }
-    else {
-        document.body.classList.remove("overflow-hidden")
-    }
+    if (isOpen == true) { document.body.classList.add("overflow-hidden") }
+    else { document.body.classList.remove("overflow-hidden") }
     function RemoveOverflow() {
         setOpen(false)
         document.body.classList.remove("overflow-hidden")
     }
     return (
-        <nav className='py-[15px]'>
+        <nav  className='py-[15px]'>
             <div className='container max-w-[1320px] flex justify-between items-center'>
-                <a className='flex items-center gap-[5px] sm:gap-2 uppercase font-Roboto font-bold text-white text-x xs:text-[22px] sm:text-2xl md:text-[30px] lg:text-[33px]' href="#"><Logo />FURNITURE</a>
+                <a className='flex items-center logo gap-[5px] sm:gap-2 uppercase font-Roboto font-bold text-white text-x xs:text-[22px] sm:text-2xl md:text-[30px] lg:text-[33px]' href="#"><Logo />FURNITURE</a>
                 <div className='flex items-center gap-3 xs:gap-5 sm:gap-10'>
                     <ul className={`${isOpen ? "right-0" : "-right-full"} flex items-center gap-[55px] mobileview`}>
-                        <li><Link to="/" onClick={RemoveOverflow} className={`${location.pathname === "/" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-Roboto`}>HOME</Link></li>
-                        <li><Link to="/about" onClick={RemoveOverflow} className={`${location.pathname === "/about" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-Roboto`}>ABOUT US</Link></li>
-                        <li><Link to="/shop" onClick={RemoveOverflow} className={`${location.pathname === "/shop" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-Roboto`}>SHOP</Link></li>
-                        <li><Link to="/contactus" onClick={RemoveOverflow} className={`${location.pathname === "/contactus" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-Roboto`}>CONTACT US</Link></li>
+                        <li><Link to="/" onClick={RemoveOverflow} className={`${location.pathname === "/" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} link1 text-white text-lg font-normal font-Roboto`}>HOME</Link></li>
+                        <li><Link to="/about" onClick={RemoveOverflow} className={`${location.pathname === "/about" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} link2 text-white text-lg font-normal font-Roboto`}>ABOUT US</Link></li>
+                        <li><Link to="/shop" onClick={RemoveOverflow} className={`${location.pathname === "/shop" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} link3 text-white text-lg font-normal font-Roboto`}>SHOP</Link></li>
+                        <li><Link to="/contactus" onClick={RemoveOverflow} className={`${location.pathname === "/contactus" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} link4 text-white text-lg font-normal font-Roboto`}>CONTACT US</Link></li>
                     </ul>
                     <div className='flex items-center gap-5 xs:gap-7'>
                         <div onClick={() => openinput('item')} className=' cursor-pointer'>

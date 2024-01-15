@@ -6,6 +6,7 @@ import product4 from '../assets/images/singlesofa7.webp'
 import product5 from '../assets/images/singlesofa8.webp'
 import product6 from '../assets/images/singlesofa9.webp'
 import { Review } from './Icons'
+import addToCartGif from '../assets/images/addtocart.gif'
 import { useEffect, useState } from 'react'
 
 const OurProducts = () => {
@@ -62,9 +63,10 @@ const OurProducts = () => {
                     {isOpen && (
                         <div>
                             <div className='bg-white max-w-[300px] xs:max-w-[380px] sm:max-w-[470px] md:max-w-[600px] min-h-[250px] sm:min-h-[300px] md:min-h-[500px] shadow-2xl rounded-3xl sm:rounded-[40px] fixed w-full flex flex-col justify-center items-center z-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>
-                                <div>
+                                <div className='flex flex-col'>
+                                    <div className='flex justify-center'><img src={addToCartGif} alt="img" /></div>
                                     <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-5 text-center'>Successfully added to cart!</h2>
-                                    <div className='flex justify-center mt-5' onClick={closeModal}><CommonBtn text="close" /></div>
+                                    <div className='flex justify-center py-5' onClick={closeModal}><CommonBtn text="close" /></div>
                                 </div>
                             </div>
                         </div>
