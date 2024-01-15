@@ -15,16 +15,20 @@ const Testimonial = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const SlideData = [
         { img: image1, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
-        { img: image2, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
-        { img: image3, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
-        { img: image4, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
-        { img: image7, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image2, name: "Treepi", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image3, name: "lorem Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image1, name: "Tre Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image4, name: "Treepi lorem", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image7, name: "S Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image1, name: "T Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image1, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image5, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image6, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image7, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image1, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image1, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
         { img: image4, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
+        { img: image1, name: "Treepi Shoty", work: "Teacher", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien." },
     ]
     return (
         <div className='container max-w-[1320px] md:pt-[30px]'>
@@ -32,18 +36,18 @@ const Testimonial = () => {
             <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 leading-normal'>Testimonial</h2>
             <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div>
-                    <Swiper loop={true} spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={true} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2">
+                    <Swiper onSwiper={setThumbsSwiper} spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }}  slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2">
                         {
                             SlideData.map((items, index) => (
                                 <SwiperSlide key={index}>
-                                    <img src={items.img} alt="img" />
+                                    <div className=' relative'><img src={items.img} alt="img" /></div>
                                 </SwiperSlide>
                             ))
                         }
                     </Swiper>
                 </div>
                 <div className='mt-5'>
-                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={true} loop={true} spaceBetween={10} slidesPerView={1} watchSlidesProgress={true} effect={'fade'} modules={[EffectFade, Thumbs]} className="mySwiper" >
+                    <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={1}   modules={[EffectFade, Thumbs]}  className="mySwiper" >
                         {
                             SlideData.map((items, index) => (
                                 <SwiperSlide key={index}>

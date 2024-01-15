@@ -1,7 +1,7 @@
 import CommonBtn from './CommonBtn'
-import product1 from '../assets/images/dealsinglesofa1.webp'
-import product2 from '../assets/images/dealsinglesofa2.webp'
-import product3 from '../assets/images/dealsinglesofa3.webp'
+import product1 from '../assets/images/singlesofa1.webp'
+import product2 from '../assets/images/singlesofa2.webp'
+import product3 from '../assets/images/singlesofa3.webp'
 import { Review } from './Icons'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -27,13 +27,13 @@ const TrendingProducts = () => {
   const SwiperItems = Items.map((items, index) => (
     <SwiperSlide key={index}>
       <div className='w-full bg-white duration-300 shadow-[0_0_0_0_rgba(0,0,0,0.12)] hover:shadow-2xl sm:hover:shadow-[6px_13px_38px_0_rgba(0,0,0,0.12)] sm:mb-4'>
-        <div className='px-[23px] py-[18px] '>
+        <div className='pl-[17px] pr-3 pt-[17px] pb-[27px]'>
           <img className='w-full' src={items.img} alt={items.productName} />
           <div className='flex items-center justify-between mt-5'>
             <p className='text-black font-Poppins font-medium text-lg sm:text-xl leading-normal'>{items.productName}</p>
             <span>{items.review}</span>
           </div>
-          <div className='flex w-full items-center gap-[6px] mt-4 pb-4 sm:pb-6 md:pb-7 lg:pb-[35px]'>
+          <div className='flex w-full items-center gap-[6px] mt-4'>
             <p className='text-black text-xl sm:text-2xl lg:text-[28px] font-Poppins font-semibold leading-normal'>{items.price}</p>
             <p className='text-[#C4C4C4] text-[11px] font-Poppins font-semibold leading-normal'>{items.cartPrice}</p>
           </div>
@@ -42,11 +42,11 @@ const TrendingProducts = () => {
     </SwiperSlide>
   ))
   return (
-    <div className='bg-[#F7F7F8] relative pb-10 sm:pb-16 md:pb-20 lg:pb-[94px] mt-10 xs:mt-16 sm:mt-[100px] md:mt-[150px] lg:mt-[200px] xl:mt-[266px]'>
+    <div className='bg-[#F7F7F8] relative pb-10 sm:pb-16 md:pb-20 lg:pb-[94px] mt-5 lg:mt-[100px] xl:mt-[153px]'>
       <div className=' overflow-x-hidden'>
         <div className='container max-w-[1320px] pt-8 sm:pt-10 md:pt-12 lg:pt-[64px] relative z-20'>
           <div className="grid grid-cols-1 lg:grid-cols-3 w-full">
-            <div className='lg:col-span-1'>
+            <div className='lg:col-span-1 overflow-hidden relative z-30 bg-[#F7F7F8] w-full'>
               <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Shopping Store</p>
               <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-6 leading-normal'>Buy trending furniture Products.</h2>
               <p className=' font-Poppins text-lg font-normal text-[#4B4B4B] leading-normal max-w-[422px] mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, urna at pulvinar porta</p>
@@ -59,8 +59,8 @@ const TrendingProducts = () => {
                 </svg></span></button>
               </div>
             </div>
-            <div className='lg:col-span-2 mt-10 sm:mt-16 md:mt-20 lg:mt-0'>
-              <div className='ovrFlowSwiper lg:ml-28'>
+            <div className='lg:col-span-2 mt-10 sm:mt-16 md:mt-20 lg:mt-0 lg:pl-28'>
+              <div className='ovrFlowSwiper '>
                 <Swiper ref={sliderRefSecond} modules={[EffectFade, Virtual]} loop={true} autoplay={{ delay: 500, disableOnInteraction: false }} slidesPerView={1} breakpoints={{ 592: { slidesPerView: 2, }, 1350: { slidesPerView: 2.5, }, }} spaceBetween={27} className="mySwiper">
                   {SwiperItems}
                 </Swiper>

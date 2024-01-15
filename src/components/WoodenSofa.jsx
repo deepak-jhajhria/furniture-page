@@ -16,7 +16,7 @@ const WoodenSofa = () => {
                     </div>
                 </div>
             </div>
-            <span className='flex max-w-[200px] sm:max-w-[300px] md:max-w-[450px] lg:max-w-[500px] xl:max-w-[741px] min-h-[100px] sm:min-h-[150px] lg:min-h-[230px] xl:min-h-[270px] bg-gradient-to-l from-[#8C939B] to-[#243040] w-full absolute bottom-0  right-0 z-0 translate-y-[25px] sm:translate-y-[45px] xl:translate-y-[65px] md:-translate-x-0 max-xs:ml-5'></span>
+            <span className='flex max-w-[200px] sm:max-w-[300px] md:max-w-[450px] lg:max-w-[500px] xl:max-w-[741px] min-h-[100px] sm:min-h-[150px] lg:min-h-[230px] xl:min-h-[270px] bg-[#243040] w-full absolute bottom-0  right-0 z-0 translate-y-[25px] sm:translate-y-[45px] xl:translate-y-[65px] md:-translate-x-0 max-xs:ml-5'></span>
         </div>
     )
 }
