@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 function ScrollToTopButton() {
     const [isVisible, setIsVisible] = useState(false);
     const toggleVisibility = () => {
@@ -15,11 +14,9 @@ function ScrollToTopButton() {
             behavior: "smooth"
         });
     };
-
     useEffect(() => {
         window.addEventListener("scroll", toggleVisibility);
     }, []);
-
     return (
         isVisible &&
         <div onClick={scrollToTop} className='fixed bottom-5 right-3 sm:right-5 z-50'>

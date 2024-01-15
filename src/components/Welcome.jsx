@@ -1,34 +1,11 @@
-import { useRef } from 'react'
 import sofa from '../assets/images/explorevideoimg.webp'
 import CommonBtn from './CommonBtn'
 import { Pause } from './Icons'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 
 const Welcome = ({ ease }) => {
-    let container = useRef();
-    useGSAP(() => {
-        gsap.from([".img", ".bgImg"], {
-            stagger: {
-                amount: 0.5,
-            },
-            ease: ease,
-            opacity: 0,
-            scale: 1.6
-
-        });
-        gsap.from([".hWelcome", ".pWelcome"], {
-            opacity: 0,
-            stagger: {
-                amount: 0.4,
-            },
-            y: '200',
-            delay: 1.0
-        });
-    });
     return (
         <div className=' overflow-hidden pt-20 sm:pt-[134px] pb-5 sm:pb-16 md:pb-20 lg:pb-[113px]'>
-            <div ref={container} className='container max-w-[1320px]'>
+            <div className='container max-w-[1320px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-full items-center lg:items-start'>
                     <div className='relative flex justify-center md:justify-start'>
                         <span className='flex max-w-[200px] bgImg sm:max-w-[300px] lg:max-w-[416px] min-h-[150px] sm:min-h-[250px] lg:min-h-[336px] bg-gradient-to-l from-[#8C939B] to-[#243040] w-full absolute -top-10 sm:-top-[64px]  md:left-0 -z-10 -translate-x-[30%] md:-translate-x-0 max-xs:ml-5'></span>
@@ -43,9 +20,9 @@ const Welcome = ({ ease }) => {
                         </div>
                     </div>
                     <div className='md:ml-5 mt-10 md:mt-0 w-full'>
-                        <p className='text-[#BD7D41] pWelcome text-lg sm:text-xl font-Poppins font-normal headingLine'>Welcome Our Story</p>
-                        <h2 className='text-[#243040] hWelcome text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-5'>We create the product you tell us you wish existed.</h2>
-                        <p className='text-[#4D4D4D] pWelcome text-base sm:text-lg font-Poppins font-normal max-w-[586px] mt-3 md:mt-4 lg:mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, urna at pulvinar porta, augue lorem ullamcorper orci, non rhoncus nisi neque sit amet nibh. Phasellus consectetur semper ante et mattis</p>
+                        <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Welcome Our Story</p>
+                        <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-5'>We create the product you tell us you wish existed.</h2>
+                        <p className='text-[#4D4D4D] text-base sm:text-lg font-Poppins font-normal max-w-[586px] mt-3 md:mt-4 lg:mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, urna at pulvinar porta, augue lorem ullamcorper orci, non rhoncus nisi neque sit amet nibh. Phasellus consectetur semper ante et mattis</p>
                         <CommonBtn cstm="mt-5 sm:mt-7 md:mt-[34px]" text="READ MORE" />
                     </div>
                 </div>
