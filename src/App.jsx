@@ -3,6 +3,7 @@ import gsap, { Power3 } from 'gsap'
 import './App.css'
 import Home from './pages/Home'
 import Header from './components/Header'
+import BackToTop from './components/BackToTop'
 import AboutUs from './pages/AboutUs'
 import Shop from './pages/Shop'
 import { useEffect, useState } from 'react'
@@ -32,6 +33,7 @@ function App() {
             </Routes>
           </div>)}
       </div>
+      <BackToTop />
     </div>
   )
 }

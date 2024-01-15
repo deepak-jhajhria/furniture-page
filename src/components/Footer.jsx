@@ -21,31 +21,31 @@ const Footer = () => {
                     <div className='col-span-1'>
                         <ul>
                             <li className='text-white font-Roboto text-sm font-medium leading-normal mb-[9px] relative after:absolute after:bg-[#BD7D41] after:h-[1px] after:w-[100px] xl:after:w-[130px] after:-bottom-[2px] after:left-0'>ABOUT STORE</li>
-                            <li><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Home</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Shop</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Product</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
+                            <li><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Home</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Shop</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Product</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
                         </ul>
                     </div>
                     <div className='col-span-1'>
                         <ul>
                             <li className='text-white font-Roboto text-sm font-medium leading-normal mb-[9px] relative after:absolute after:bg-[#BD7D41] after:h-[1px] after:w-[100px] xl:after:w-[130px] after:-bottom-[2px] after:left-0'>BRANDS</li>
-                            <li><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Album</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Shop</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Product</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
+                            <li><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Album</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Shop</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Product</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
                         </ul>
                     </div>
                     <div className='col-span-1'>
                         <ul>
                             <li className='text-white font-Roboto text-sm font-medium leading-normal mb-[9px] relative after:absolute after:bg-[#BD7D41] after:h-[1px] after:w-[100px] xl:after:w-[130px] after:-bottom-[2px] after:left-0'>CATEGORIES</li>
-                            <li><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Single</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Aleeper Sofas</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Accent Chairs</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
-                            <li className='mt-1'><Link className='text-white font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
+                            <li><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Single</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Aleeper Sofas</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Accent Chairs</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Festival Offer</Link></li>
+                            <li className='mt-1'><Link className='text-white footerLink font-Roboto text-sm font-normal leading-normal'>Log in</Link></li>
                         </ul>
                     </div>
                 </div>

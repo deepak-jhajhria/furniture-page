@@ -25,7 +25,7 @@ const Header = ({timeline}) => {
         });
     });
     return (
-        <div ref={header} className='bg-[url(./assets/images/headerbg2.webp)] bg-cover bg-center w-full min-h-[550px] sm:min-h-[650px] md:min-h-[750px] lg:min-h-[932px]'>
+        <div ref={header} className='bg-[url(./assets/images/headerbg2.webp)] bg-cover bg-center w-full min-h-[550px] sm:min-h-[650px] md:min-h-[750px] lg:min-h-[932px] overflow-hidden'>
             <NavBar timeline={tl} ease={ease}/>
             <div className=' container max-w-[1320px] flex justify-center'>
                 <div className='max-w-[908px] mx-auto mt-10 sm:mt-16  md:mt-20 lg:mt-[135px] relative'>

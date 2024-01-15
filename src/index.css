@@ -3,16 +3,23 @@
 @tailwind utilities;
 
 @layer components {
-  .headingLine{
+  .headingLine {
     @apply relative before:absolute before:h-[1px] before:bg-black before:w-[54px] sm:before:w-[95px] before:top-1/2 before:left-0 pl-16 sm:pl-[106px]
   }
-  .headingLine2{
-    @apply relative before:absolute before:h-[1px] before:bg-black before:w-[54px] sm:before:w-[100px] before:top-1/2 before:left-0 
+
+  .headingLine2 {
+    @apply relative before:absolute before:h-[1px] before:bg-black before:w-[54px] sm:before:w-[100px] before:top-1/2 before:left-0
   }
-  .background-layer{
+
+  .background-layer {
     @apply bg-gray-300 relative z-10
   }
-  .mobileview{
+
+  .mobileview {
     @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-gradient-to-br max-lg:from-[#8C939B] max-lg:to-[#243040] top-0 max-md:text-black max-lg:items-center max-lg:justify-center max-lg:min-h-screen max-lg:z-40
-}
+  }
+
+  .footerLink {
+    @apply relative after:absolute duration-300 after:duration-300 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#BD7D41] after:rounded-full after:left-0 after:-bottom-[2px]
+  }
 }

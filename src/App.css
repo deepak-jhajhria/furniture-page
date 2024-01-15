@@ -102,3 +102,6 @@
     transform: rotate(360deg);
   }
 }
+.backToTop::before{
+  content: "Back To Top" !important;
+}

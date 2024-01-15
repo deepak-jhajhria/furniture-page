@@ -43,7 +43,7 @@ const OurProducts = () => {
                     <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-3 md:mt-4 lg:mt-5'>Our Products</h2>
                     <CommonBtn text="VIEW ALL PRODUCT" />
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full lg:gap-5 xl:gap-[27px] my-8 sm:my-10 md:my-16 lg:my-[90px]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full lg:gap-5 xl:gap-[27px] my-8 sm:my-10 md:my-16 lg:my-[90px]'>
                     {products.map((items, index) => (
                         <div key={index} className='w-full bg-white duration-300 shadow-[0_0_0_0_rgba(0,0,0,0.12)] hover:shadow-[6px_13px_38px_0_rgba(0,0,0,0.12)] mb-4'>
                             <div className='px-[23px] py-[18px]'>
@@ -54,7 +54,7 @@ const OurProducts = () => {
                                 </div>
                                 <p className='text-[#4D4D4D] text-base sm:text-lg font-Poppins font-normal mt-4 leading-normal'>{items.productPara}</p>
                                 <div className='flex w-full items-center justify-between mt-4 pb-5 sm:pb-7 md:pb-[35px]'>
-                                    <p className='text-black text-xl sm:text-2xl lg:text-[28px] font-Poppins font-semibold leading-normal'>{items.price}</p>
+                                    <p className='text-black text-xl sm:text-2xl xl:text-[28px] font-Poppins font-semibold leading-normal'>{items.price}</p>
                                     <div onClick={() => addToCart('item')}>{items.cartBtn}</div>
                                 </div>
                             </div>
