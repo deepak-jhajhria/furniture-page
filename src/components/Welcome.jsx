@@ -25,13 +25,6 @@ const Welcome = ({ ease }) => {
             y: '200',
             delay: 1.0
         });
-        gsap.from([".btn"], {
-            ease: ease,
-            opacity: 0,
-            scale: 1.6,
-            delay: 1.0
-
-        });
     });
     return (
         <div className=' overflow-hidden pt-20 sm:pt-[134px] pb-5 sm:pb-16 md:pb-20 lg:pb-[113px]'>
