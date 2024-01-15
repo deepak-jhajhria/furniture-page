@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className='flex flex-col gap-3 sm:gap-5 md:gap-[23px]'>
                             <a className='flex items-center gap-[5px] sm:gap-2 uppercase font-Roboto font-bold text-white text-x xs:text-[22px] sm:text-2xl md:text-[30px] lg:text-[33px]' href="#"><Logo />FURNITURE</a>
                             <p className=' text-white font-Roboto font-normal leading-normal max-w-[338px] text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
-                            <div className='flex gap-3'>
+                            <div className='flex gap-3 max-sm:mt-3'>
                                 <InstaIcon />
                                 <TwitterIcon />
                                 <FacebookIcon />

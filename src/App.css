@@ -102,6 +102,18 @@
     transform: rotate(360deg);
   }
 }
-.backToTop::before{
+
+.backToTop::before {
   content: "Back To Top" !important;
+}
+
+.swiper-slide-active {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  align-items: center;
 }

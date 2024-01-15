@@ -19,7 +19,7 @@ const FestivalOffer = () => {
         },
     ]
     return (
-        <div className='container max-w-[1320px] my-14 md:my-16 lg:my-20'>
+        <div className='container max-w-[1320px] my-14 md:my-16 lg:my-[76px]'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 lg:gap-9">
                 {
                     OfferItems.map((items, index) => (
