@@ -34,12 +34,15 @@ const NavBar = ({ timeline }) => {
     const clearAll = () => {
         setClear(true);
     };
-    if (isOpen === true, addCart === true) { document.body.classList.add("overflow-hidden") }
-    else { document.body.classList.remove("overflow-hidden") }
+
     function RemoveOverflow() {
         setOpen(false)
         document.body.classList.remove("overflow-hidden")
     }
+    if (isOpen) { document.body.classList.add("overflow-hidden") }
+    else { document.body.classList.remove("overflow-hidden") }
+    if (addCart === true) { document.body.classList.add("cartOverFlow") }
+    else { document.body.classList.remove("cartOverFlow") }
     // animations 
     let navBar = useRef();
     useGSAP(() => {
