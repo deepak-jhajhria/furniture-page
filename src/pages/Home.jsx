@@ -13,14 +13,14 @@ const Home = () => {
     let ease = Power3.easeOut();
     return (
         <div>
-            <Welcome timeline={tl} ease={ease}/>
-            <TrendingProducts timeline={tl} ease={ease}/>
-            <OurProducts timeline={tl} ease={ease}/>
-            <WoodenSofa timeline={tl} ease={ease}/>
-            <DealProduct timeline={tl} ease={ease}/>
-            <FestivalOffer timeline={tl} ease={ease}/>
-            <Testimonial timeline={tl} ease={ease}/>
-            <Footer timeline={tl} ease={ease}/>
+            <Welcome timeline={tl} ease={ease} />
+            <TrendingProducts timeline={tl} ease={ease} />
+            <OurProducts timeline={tl} ease={ease} />
+            <WoodenSofa timeline={tl} ease={ease} />
+            <DealProduct timeline={tl} ease={ease} />
+            <FestivalOffer timeline={tl} ease={ease} />
+            <Testimonial timeline={tl} ease={ease} />
+            <Footer timeline={tl} ease={ease} />
         </div>
     )
 }

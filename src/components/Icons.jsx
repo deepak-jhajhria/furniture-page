@@ -36,6 +36,15 @@ export const Pause = () => {
         </span>
     )
 }
+export const Play = () => {
+    return (
+        <span className="w-6 h-6 sm:w-10 sm:h-10 md:w-[45px] md:h-[45px] bg-[#BD7D41] rounded-full flex items-center justify-center">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.5 15V9M14.5 15V9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
+    )
+}
 export const Review = () => {
     return (
         <span>
@@ -51,7 +60,7 @@ export const Review = () => {
 }
 export const CrossIcon = () => {
     return (
-        <svg width="15" height="15" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="0.428917" y1="11.3654" x2="11.0355" y2="0.758839" stroke="black" />
             <line x1="0.987994" y1="0.781083" x2="11.3618" y2="11.6549" stroke="black" />
         </svg>

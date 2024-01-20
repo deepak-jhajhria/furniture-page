@@ -19,7 +19,7 @@ function ScrollToTopButton() {
     }, []);
     return (
         isVisible &&
-        <div onClick={scrollToTop} className='fixed bottom-5 right-3 sm:right-5 z-50'>
+        <div onClick={scrollToTop} className='fixed bottom-5 right-3 sm:right-5 z-40'>
             <button className="rounded-full hover:w-[100px] sm:hover:w-[140px] hover:duration-300 hover:bg-[#535F6D] relative before:absolute before:-bottom-5 backToTop before:text-white before:text-[0px] hover:before:text-sm sm:hover:before:text-xl before:duration-300 hover:before:bottom-3 hover:before:duration-300 group z-50 w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] bg-[rgb(20,20,20)] font-semibold flex items-center justify-center shadow-[0_0_0_4px_rgba(180,160,255,0.253)] hover:shadow-[0_0_0_4px_rgba(251,251,255,0.253)] overflow-hidden">
                 <svg className=" w-3 duration-300 fill-white group-hover:translate-y-[200%]" viewBox="0 0 384 512">
                     <path
